@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futsal Voxsa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GLASS CARD */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+
+    background: rgba(255, 215, 0, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 25px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.15);
+
+    color: white;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* LOGO */
+.profile-img {
+    /* make image scale with its container on all screen sizes */
+    width: 120px;
+    max-width: 100%;      /* ensure it never overflows on small devices */
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #f5c542;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(245,197,66,0.6);
+}
+
+/* if you want the logo slightly larger on bigger screens */
+@media (min-width: 768px) {
+    .profile-img {
+        width: 150px;
+    }
+}
+
+/* TEXT */
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    text-decoration: none;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    font-weight: 600;
+
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    color: white;
+
+    transition: 0.3s ease;
+}
+
+.link-btn:hover {
+    background: #f5c542;
+    color: black;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(245,197,66,0.6);
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <!-- Ganti logo.jpg sesuai nama file kamu -->
+    <img src="voxsa.jpeg" alt="Logo Futsal Voxsa" class="profile-img">
+
+    <h1>@futsal.voxsa</h1>
+    <p>Futsal Vokasi Universitas Brawijaya</p>
+
+    <a href="#" class="link-btn">
+        <i class="fa-solid fa-file-lines"></i>
+        SOP Media Partner VOXSA 2026
+    </a>
+
+    <a href="#" class="link-btn">
+        <i class="fa-brands fa-whatsapp"></i>
+        Narahubung Voxsa 1
+    </a>
+
+    <a href="#" class="link-btn">
+        <i class="fa-brands fa-whatsapp"></i>
+        Narahubung Voxsa 2
+    </a>
+
+    <a href="https://www.tiktok.com/@forzavoxsa?is_from_webapp=1&sender_device=pc" class="link-btn">
+        <i class="fa-brands fa-tiktok"></i>
+        TikTok
+    </a>
+
+    <a href="#" class="link-btn">
+        <i class="fa-solid fa-futbol"></i>
+        Tim Futsal Vokasi
+    </a>
+
+    <a href="#" class="link-btn">
+        <i class="fa-solid fa-trophy"></i>
+        Tim Sepak Bola Voxsa
+    </a>
+
+    <div class="footer">
+        © 2026 Futsal Voxsa
+    </div>
+    <div class="footer">
+        #AyasVoxsaAyasChampions
+
+</div>
+
+</body>
+</html>
